@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+            android:id="@+id/header_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:text="0件货物"
+            android:textColor="@color/gray"/>
+        <LinearLayout
+            android:id="@+id/header_right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+
+            >
+            <com.zdv.renrensong.renrensong.customView.CustomSinnper
+                android:id="@+id/spinner_scope"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:layout_gravity="center"
+                android:background="@color/transparent"
+
+                android:textColor="@color/gray"/>
+            <com.zdv.renrensong.renrensong.customView.CustomSinnper
+                android:id="@+id/spinner_order"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:background="@color/transparent"
+                android:textSize="12sp"
+                android:textColor="@color/gray"/>
+        </LinearLayout>
+    </LinearLayout>
+    <com.zdv.renrensong.renrensong.customView.RecyclerViewWithEmpty
+
+        android:id="@+id/recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header"
+        android:layout_marginTop="10dp"
+        android:divider="#ffff0000"
+        android:dividerHeight="10dp"/>
+    <include
+        android:id="@+id/empty_lay"
+        layout="@layout/empty_lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+</RelativeLayout>

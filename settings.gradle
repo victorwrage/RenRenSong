@@ -1,0 +1,1 @@
+include ':app', ':slidingmenu', ':library_pageIndicator', ':greendaolib'

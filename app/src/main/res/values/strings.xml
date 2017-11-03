@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">人人送</string>
+    <string name="msg_exit">退出人人送吗</string>
+    <string name="scan">正在扫码</string>
+    <string name="scan_tip"></string>
+    <string name="push_title"> 您收到一条新消息</string>
+    <string name="push_content"> 请点击查看</string>
+
+</resources>
